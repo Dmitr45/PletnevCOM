@@ -1468,6 +1468,10 @@ footer #up {
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
     overflow-x: scroll;
+    scrollbar-color: #00A8CC #C5E6F7;
+    /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: auto;
+    /* толщина */
   }
 
   .Featured_works .works_container .works_items {

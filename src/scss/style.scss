@@ -433,13 +433,13 @@ body{
         max-height: 150px;
         overflow-y: hidden;
       }
-
     }
   }
 }
 
 //   Секция Featured_works
 .Featured_works{
+
   .works_title{
     height: 50px;
     padding-top: 20px;
@@ -447,9 +447,11 @@ body{
   .works_container{
     display: flex;
     flex-flow: column wrap;
-    @media (max-width: $md3) {
+    @media (max-width: $md3) {  
       flex-flow: row nowrap;
       overflow-x: scroll ;
+      scrollbar-color: #00A8CC #C5E6F7; /* «цвет ползунка» «цвет полосы скроллбара» */
+      scrollbar-width: auto;  /* толщина */
     }
 
     .works_items {
