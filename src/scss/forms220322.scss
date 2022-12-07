@@ -1,0 +1,45 @@
+// Здесь все, что касается форм полей и кнопок
+
+.hello__btn__flex{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Heebo 500";
+  font-size: 20px;
+  line-height: 50/20*100%;
+  text-align: center;
+  @media (max-width: 767.98px) {
+    display: block;
+  }
+  .download{
+    @media (max-width: 991.98px) {
+      order: 3;
+    }
+  }
+}
+
+.btn{
+  flex: 0 0 228px;
+  display: block;
+  cursor: pointer;
+  height: 47px;
+  border-radius: 2px;
+  background-color: #FF6464;
+  color: #ffffff;
+
+
+  @media (max-width: 767.98px) {
+    margin: 20px auto;
+    max-width: 90%;
+       }
+
+  transition: all 0.3s ease 0ms;
+
+  &:active{
+    height: 43px;
+    width: 187px;
+    font-size: 18px;
+  }
+
+}

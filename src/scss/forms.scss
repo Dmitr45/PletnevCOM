@@ -1,0 +1,73 @@
+// Здесь все, что касается форм полей и кнопок
+
+.hello__btn__flex{
+  display: flex;
+  height: 60px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Heebo 500";
+  font-size: 20px;
+  line-height: 50/20*100%;
+  text-align: center;
+  @media (max-width: 767.98px) {
+    display: block;
+    height: 200px
+  }
+  .download{
+    @media (max-width: 991.98px) {
+      order: 3;
+    }
+  }
+}
+
+
+
+.btn{
+  flex: 0 1 181px;
+  width: 181px;
+  display: block;
+  border-radius: 15px;
+  height: 47px;
+  padding: 0 15px 0;
+  border: 2px solid #ff6464;
+  text-align: center;
+  transition: all .3s;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px;
+  background-color: #ff6464;
+  color: #fff;
+
+
+  @media (max-width: 767.98px) {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+
+
+  &:hover {
+    background-color: #fff;
+    color: #ff6464;
+  }
+
+  &.load {
+    border-radius: 100px;
+    flex: 0 0 47px;
+    width: 47px;
+    padding: 7px;
+    color: #ff6464;
+    border-bottom: #fff;
+    border-left: #fff;
+    background-color: #fff;
+    animation:spin 2.5s linear infinite;
+    /* чтобы не вращалась кнопка, пока еще не круглая */
+    animation-delay: .3s;
+
+  }
+
+  @keyframes spin { 100% { transform:rotate(360deg); } }
+
+}
