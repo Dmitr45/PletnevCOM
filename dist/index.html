@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ширина контента строго равна ширине девайса -->
     <title>Dmitry page</title>
-    <link href="css/style.min.css?_v=20221105203620" rel="stylesheet"> <!-- подгружаем все стили -->
-    <script src="js/app.min.js?_v=20221105203620" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
+    <link href="css/style.min.css?_v=20221207104616" rel="stylesheet"> <!-- подгружаем все стили -->
+    <script src="js/app.min.js?_v=20221207104616" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
 </head>
 <body>
 <header class="header">
@@ -109,6 +109,16 @@
     <sektion class="Featured_works _container" id="works">
         <div class="works_title"><h3>Featured_works</h3></div>
         <div class="works_container">
+            <div class="works_items"><div class="image_items"><a href="http://bulangeria.ru/" target="_blank"><picture><source srcset="\img\Featured_works\bolangeria\bulangeria.webp" type="image/webp"><img src="\img\Featured_works\bolangeria\bulangeria.jpg" alt="Bulangeria"/></picture></a></div>
+                <div class="work_content">
+                    <h3><a href="http://bulangeria.ru/" target="_blank">Zhito bulangeria, a bakery in Novosibirsk</a></h3>
+                    <span class="year">2022</span> <span class="work_technol">HTML, CSS, JS, Figma</span>
+                        <p>Technologies: <br>
+                        Used: HTML, CSS(SASS, Flex, Grid), JS, @media queries <br>
+                        Not used: Bootstrap, React, jQuery <br>
+                    </p>
+                </div>
+            </div>
             <div class="works_items"><div class="image_items"><a href="http://tendril-nsk.ru/" target="_blank"><picture><source srcset="img/Featured_works/tendril/Tendril.webp" type="image/webp"><img src="img/Featured_works/tendril/Tendril.jpg" alt="Tendril"/></picture></a></div>
                 <div class="work_content">
                     <h3><a href="http://tendril-nsk.ru/" target="_blank">Beauty Salon Websites Tendril-nsk.ru</a></h3>
@@ -166,11 +176,19 @@
 
 <footer>
     <div class="footer_container" >
-        <p>Copyright ©2021-<span id="copy_year"></span>. All rights reserved.</p>
+        <p>2021-<span id="copy_year"></span>©<p>
     </div>
-    <div id="up">>>></div>
+    <!--<div id="up">>>></div>-->
+    <div id="up"><svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+   <g>
+       <polygon style="fill:#50C8EF;" points="468.631,212.631 435.369,245.901 256.01,66.524 76.631,245.901 43.369,212.631 256.01,0 	
+           "/>
+       <polygon style="fill:#50C8EF;" points="468.631,345.679 435.369,378.949 256.01,199.58 76.631,378.949 43.369,345.679 
+           256.01,133.051 	"/>
+       <polygon style="fill:#50C8EF;" points="468.631,478.735 435.369,512 256.01,332.631 76.631,512 43.369,478.735 256.01,266.099 	"/>
+   </g></svg></div>
 </footer>
-
 
 </body>
 </html>
