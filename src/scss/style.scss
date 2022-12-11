@@ -95,6 +95,10 @@ strong{
   }
 }
 
+.hiden{
+  display: none;
+}
+
 body{
   display: flex;
   flex-flow: column nowrap;
@@ -292,7 +296,6 @@ body{
   }
 
 }
-
 
 //   ChartFrontEnd
 .chartFrontEnd{
@@ -505,6 +508,87 @@ body{
       }
     }
   }
+
+}
+
+
+//Contact Send a message to Telegram
+.Contact{
+  top: 100px;
+  width: $md1;
+  height: 600px;
+  right: 0;
+  left: 0;
+  background-color: #C5E6F7;
+  border: #00A8CC solid 2px;
+  border-radius: 20px;
+  margin: 0 auto;
+  z-index: 1000;
+  @media(max-width: $md3) {
+    height: 750px;
+   }
+   @media(max-width: $md4) {
+    height: 775px;
+   }
+  .blog_title{
+    padding-top: 30px;
+    width: 100%;
+    h3{
+    text-align: center;
+      }
+      }
+    .form_group{
+      margin-left: 50px;
+      label{
+        display: inline-block;
+        width: 150px;
+      }
+    }
+    input{
+      width: 400px;
+      margin: 20px;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media(max-width: $md3) {
+        width: 320px;
+       }
+       @media(max-width: $md3) {
+        width: 150px;
+       }
+      }
+      textarea{
+      height: 90px;
+      width: 400px;
+      margin: 20px;
+      border-radius: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      @media(max-width: $md3) {
+        width: 320px;
+       }
+       @media(max-width: $md4) {
+        width: 150px;
+       }
+    }  
+    .success{
+      opacity: 0;
+      text-align: center;
+      background-color: rgb(88, 207, 201);
+      line-height: 30px;
+      height: 30px;
+      transition: opacity 1.5s;
+          }
+    button{
+      margin-left: 220px;
+      @media(max-width: $md3) {
+        margin-left: 150px;;
+       }
+      @media(max-width: $md4) {
+        margin-left: 70px;;
+       }
+    }
 
 }
 

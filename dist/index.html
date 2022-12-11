@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ширина контента строго равна ширине девайса -->
     <title>Dmitry page</title>
-    <link href="css/style.min.css?_v=20221207182646" rel="stylesheet"> <!-- подгружаем все стили -->
-    <script src="js/app.min.js?_v=20221207182646" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
+    <link href="css/style.min.css?_v=20221212021041" rel="stylesheet"> <!-- подгружаем все стили -->
+    <script src="js/app.min.js?_v=20221212021041" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
 </head>
 <body>
 <header class="header">
@@ -23,8 +23,9 @@
                 <li><a href="#certificates" class="menu__link">Certificates</a><br><span class="border_link"></span></li>
                 <li><a href="#works" class="menu__link">Works</a><br><span class="border_link"></span></li>
                 <!-- <li><a href="#education" class="menu__link">Education</a><br><span class="border_link"></span></li>
-               <li><a href="blog.html" class="menu__link">Blog</a><br><span class="border_link"></span></li> -->
-                <li id="phone"><a href="tel:+79529025968" class="menu__link" ><picture><source srcset="../img/whatsapp-logo.webp" type="image/webp"><img src="../img/whatsapp-logo.png" width="25px" height="25px"></picture> +79529025968</a><br><span class="border_link"></span></li>
+                <li><a href="blog.html" class="menu__link">Blog</a><br><span class="border_link"></span></li> 
+                <li id="phone"><a href="tel:+79529025968" class="menu__link" ><picture><source srcset="../img/whatsapp-logo.webp" type="image/webp"><img src="../img/whatsapp-logo.png" width="25px" height="25px"></picture> +79529025968</a><br><span class="border_link"></span></li>-->
+                <li><a href="#SendMessage" id="link_contact" class="menu__link">Contact</a><br><span class="border_link"></span></li>
             </ul>
         </nav>
 
@@ -106,7 +107,7 @@
         </div>
         </div>
     </section>
-    <sektion class="Featured_works _container" id="works">
+    <section class="Featured_works _container" id="works">
         <div class="works_title"><h3>Featured_works</h3></div>
         <div class="works_container">
             <div class="works_items"><div class="image_items"><a href="http://bulangeria.ru/" target="_blank"><picture><source srcset="\img\Featured_works\bolangeria\bulangeria.webp" type="image/webp"><img src="\img\Featured_works\bolangeria\bulangeria.jpg" alt="Bulangeria"/></picture></a></div>
@@ -170,10 +171,35 @@
                 </div>
             </div>
         </div>
-    </sektion>
+    </section>
  </main>
 
 
+<section class="Contact _container" id="SendMessage">
+    <div class="blog_title"><h3>Send a message to Telegram</h3></div>
+    <div class="">  
+        <form id="tg"  >
+            <div class="form_group">
+                <label for="InputName" class="form-label">Name</label>
+                <input type="text" name="InputName" class="" id="InputName">
+            </div>
+            <div class="form_group">
+                <label for="InputTel" class="form-label">Phone number</label>
+                <input type="tel" name="InputTel" class="" id="InputTel">
+            </div>
+            <div class="form_group">
+                <label for="InputText" class="form-label">Message</label>
+                <textarea type="text" class="text" name="InputText" id="InputText"> </textarea>
+            </div>
+            <div class="form_group">
+                <label for="InputFile" class="form-label">File</label>
+                <input type="file" class="input_file" id="InputFile" name="InputFile" >
+            </div>
+            <div id="success" class="success"></div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+</section>
 <footer>
     <div class="footer_container" >
         <p>2021-<span id="copy_year"></span>©<p>

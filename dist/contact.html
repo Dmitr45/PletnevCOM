@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ширина контента строго равна ширине девайса -->
     <title>Dmitry blog</title>
-    <link href="css/style.min.css?_v=20221207182646" rel="stylesheet"> <!-- подгружаем все стили -->
-    <script src="js/app.min.js?_v=20221207182646" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
+    <link href="css/style.min.css?_v=20221212021041" rel="stylesheet"> <!-- подгружаем все стили -->
+    <script src="js/app.min.js?_v=20221212021041" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
 </head>
 <body>
 <header class="header">
@@ -23,46 +23,39 @@
                 <li><a href="#certificates" class="menu__link">Certificates</a><br><span class="border_link"></span></li>
                 <li><a href="#works" class="menu__link">Works</a><br><span class="border_link"></span></li>
                 <!-- <li><a href="#education" class="menu__link">Education</a><br><span class="border_link"></span></li>
-               <li><a href="blog.html" class="menu__link">Blog</a><br><span class="border_link"></span></li> -->
-                <li id="phone"><a href="tel:+79529025968" class="menu__link" ><picture><source srcset="../img/whatsapp-logo.webp" type="image/webp"><img src="../img/whatsapp-logo.png" width="25px" height="25px"></picture> +79529025968</a><br><span class="border_link"></span></li>
+                <li><a href="blog.html" class="menu__link">Blog</a><br><span class="border_link"></span></li> 
+                <li id="phone"><a href="tel:+79529025968" class="menu__link" ><picture><source srcset="../img/whatsapp-logo.webp" type="image/webp"><img src="../img/whatsapp-logo.png" width="25px" height="25px"></picture> +79529025968</a><br><span class="border_link"></span></li>-->
+                <li><a href="#SendMessage" id="link_contact" class="menu__link">Contact</a><br><span class="border_link"></span></li>
             </ul>
         </nav>
 
     </div>
 </header>
-<sektion class="blog">
-    <div class="blog_title _container"><h3>Contact</h3></div>
-    <div class=".slider _container">
-
-
-        <div class="my-slider"> <!-- Разметка html -->
-            <div class="slide"><picture><source srcset="imd/photo-test.webp" type="image/webp"><img src="imd/photo-test.jpg" alt=""></picture><div class="item_recent">
-                <div class="title_item_recent"><h3>Making a design system from scratch</h3></div>
-                <div class="info_item_recent"><span class="date">12 Feb 2020</span>| <span class="technology">Design, Pattern</span></div>
-                <div class="text_item_recent"><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p></div></div>
+<section class="Contact _container" id="SendMessage">
+    <div class="blog_title"><h3>Send a message to Telegram</h3></div>
+    <div class="">  
+        <form id="tg"  >
+            <div class="form_group">
+                <label for="InputName" class="form-label">Name</label>
+                <input type="text" name="InputName" class="" id="InputName">
             </div>
-            <div class="slide"><picture><source srcset="imd/photo-test.webp" type="image/webp"><img src="imd/photo-test.jpg" alt=""></picture><div class="item_recent">
-                <div class="title_item_recent"><h3>Making a design system from scratch</h3></div>
-                <div class="info_item_recent"><span class="date">12 Feb 2020</span>| <span class="technology">Design, Pattern</span></div>
-                <div class="text_item_recent"><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p></div></div>
+            <div class="form_group">
+                <label for="InputTel" class="form-label">Phone number</label>
+                <input type="tel" name="InputTel" class="" id="InputTel">
             </div>
-            <div class="slide"><picture><source srcset="imd/photo-test.webp" type="image/webp"><img src="imd/photo-test.jpg" alt=""></picture><div class="item_recent">
-                <div class="title_item_recent"><h3>Making a design system from scratch</h3></div>
-                <div class="info_item_recent"><span class="date">12 Feb 2020</span>| <span class="technology">Design, Pattern</span></div>
-                <div class="text_item_recent"><p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                </p></div></div>
+            <div class="form_group">
+                <label for="InputText" class="form-label">Message</label>
+                <textarea type="text" class="text" name="InputText" id="InputText"> </textarea>
             </div>
-        </div>
-
-
-
-
-
-
+            <div class="form_group">
+                <label for="InputFile" class="form-label">File</label>
+                <input type="file" class="input_file" id="InputFile" name="InputFile" >
+            </div>
+            <div id="success" class="success"></div>
+            <button type="submit" class="btn">Send</button>
+        </form>
     </div>
-</sektion>
+</section>
 <footer>
     <div class="footer_container" >
         <p>2021-<span id="copy_year"></span>©<p>

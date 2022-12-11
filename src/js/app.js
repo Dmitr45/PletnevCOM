@@ -26,4 +26,7 @@ let item = document.querySelector("#copy_year").innerHTML = NowYear;
 // Подключаем кнопку UP
 flsFunctions.ButtonScrollUp('#up', 0);
 
+// Форма обратной связи с отправкой в телеграм
+flsFunctions.TelegramMessage();
+
 

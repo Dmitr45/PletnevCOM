@@ -802,6 +802,10 @@ strong::first-letter {
   color: #FF6464;
 }
 
+.hiden {
+  display: none;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1153,6 +1157,70 @@ body {
   line-height: 146.9%;
 }
 
+.Contact {
+  top: 100px;
+  width: 1012px;
+  height: 600px;
+  right: 0;
+  left: 0;
+  background-color: #C5E6F7;
+  border: #00A8CC solid 2px;
+  border-radius: 20px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+.Contact .blog_title {
+  padding-top: 30px;
+  width: 100%;
+}
+
+.Contact .blog_title h3 {
+  text-align: center;
+}
+
+.Contact .form_group {
+  margin-left: 50px;
+}
+
+.Contact .form_group label {
+  display: inline-block;
+  width: 150px;
+}
+
+.Contact input {
+  width: 400px;
+  margin: 20px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Contact textarea {
+  height: 90px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Contact .success {
+  opacity: 0;
+  text-align: center;
+  background-color: #58cfc9;
+  line-height: 30px;
+  height: 30px;
+  -webkit-transition: opacity 1.5s;
+  -o-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+.Contact button {
+  margin-left: 220px;
+}
+
 footer {
   padding-top: 32px;
   height: 182px;
@@ -1491,6 +1559,26 @@ footer #up {
     text-align: center;
   }
 
+  .Contact {
+    height: 750px;
+  }
+
+  .Contact input {
+    width: 320px;
+  }
+
+  .Contact input {
+    width: 150px;
+  }
+
+  .Contact textarea {
+    width: 320px;
+  }
+
+  .Contact button {
+    margin-left: 150px;
+  }
+
   .blog {
     margin: 90px 18px 57px 18px;
   }
@@ -1519,6 +1607,18 @@ footer #up {
   ._container {
     max-width: 300px;
     margin: 130px auto;
+  }
+
+  .Contact {
+    height: 775px;
+  }
+
+  .Contact textarea {
+    width: 150px;
+  }
+
+  .Contact button {
+    margin-left: 70px;
   }
 }
 

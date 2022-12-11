@@ -39,6 +39,67 @@ export function mobMenuActive() {
 }
 mobMenuActive();
 
+//Скрипт оправки сообщений из формы. Воспользуемся ботом телеграм для отправки сообщений 
+//https://www.youtube.com/watch?v=RviYQrNdDok
+//https://tlgrm.ru/docs/bots/api  sendMessage
+//https://www.npmjs.com/package/axios Используем для отправки сообщений $ npm install axios
+import axios from 'axios';
+export function TelegramMessage(){
+    const TOKEN = "5698301113:AAFrSfVgJo33K6n_VzDmQMlbgtfiQ91F8vY";
+    const CHAT_ID = "-1001807784586";
+    const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+    const URI_API_DOC = `https://api.telegram.org/bot${TOKEN}/sendDocument`;
+    const success = document.querySelector('#success') 
+
+    // БОТ  PletnevdComSEND PletnevdComSEND_bot Use this token to access the HTTP API: 5698301113:AAFrSfVgJo33K6n_VzDmQMlbgtfiQ91F8vY
+document.querySelector('#tg').addEventListener('submit', function(e) {
+        e.preventDefault(); // Обнулили стандартное действие формы
+        
+        let massage  = `<b> Сообщение с сайта pletnevd.com</b> \n`
+        massage += `<b> Отправитель: </b> ${this.InputName.value} \n`
+        massage += `<b> Телефон: </b> ${this.InputTel.value} \n`
+        massage += `<b> Сообщение: </b>${this.InputText.value}`
+
+        let formData = new FormData();
+        formData.append('chat_id', CHAT_ID)
+        formData.append('document', this.InputFile.files[0])
+
+        
+        axios.post(URI_API_DOC,  formData, {
+            headers: { 'Content-Type' : 'multipart/form-data' }
+            })
+
+        axios.post(URI_API, {  // Первый параметр куда отправляем, второй - объект
+            chat_id:  CHAT_ID, 
+            parse_mode: 'html',
+            text: massage
+        }) 
+        .then((res) => {
+            this.InputName.value = "";
+            this.InputTel.value = "";
+            this.InputText.value = "";
+            success.innerHTML = "Message sent!";
+            success.style.opacity = '1';
+        })
+        .catch((err) =>{
+            console.warn(err);
+        })
+        .finally(() =>{ console.log("TelegramMessage end") })
+        console.log(massage);
+})
+
+//document.querySelector('#link_contact').addEventListener("click", (e) =>{
+//    document.querySelector('#SendMessage').classList.toggle('hiden');
+//} )
+
+
+} 
+
+
+
+
+
+
 function DateTime(){
         let now = new Date();
         let nowYear = now.getFullYear();
