@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ширина контента строго равна ширине девайса -->
     <title>Dmitry page</title>
-    <link href="css/style.min.css?_v=20221227170309" rel="stylesheet"> <!-- подгружаем все стили -->
-    <script src="js/app.min.js?_v=20221227170309" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
+    <link href="css/style.min.css" rel="stylesheet"> <!-- подгружаем все стили -->
+    <script src="js/app.min.js" defer></script> <!-- defer для полной загрузки DOM перед скриптом -->
 </head>
 <body>
 <header class="header">
@@ -19,13 +19,14 @@
         </div>
         <nav class="menu__body" id="menu__body">
             <ul class="menu__list" id="menu-list">
-                <li><a href="#chartFrontEnd" class="menu__link">Technology</a><br><span class="border_link"></span></li>
-                <li><a href="#certificates" class="menu__link">Certificates</a><br><span class="border_link"></span></li>
-                <li><a href="#works" class="menu__link">Works</a><br><span class="border_link"></span></li>
-                <!-- <li><a href="#education" class="menu__link">Education</a><br><span class="border_link"></span></li>
+                <li><a href="#chartFrontEnd" class="menu__link">Технолгии</a><br><span class="border_link"></span></li>
+                <li><a href="#certificates" class="menu__link">Сертификаты</a><br><span class="border_link"></span></li>
+                <li><a href="#requisites" class="menu__link">Реквизиты</a><br><span class="border_link"></span></li>
+                <!--<li><a href="#works" class="menu__link">Услуги</a><br><span class="border_link"></span></li>
+                 <li><a href="#education" class="menu__link">Education</a><br><span class="border_link"></span></li>
                 <li><a href="blog.html" class="menu__link">Blog</a><br><span class="border_link"></span></li> 
-                <li id="phone"><a href="tel:+79529025968" class="menu__link" ><picture><source srcset="../img/whatsapp-logo.webp" type="image/webp"><img src="../img/whatsapp-logo.png" width="25px" height="25px"></picture> +79529025968</a><br><span class="border_link"></span></li>-->
-                <li><a href="#SendMessage" id="link_contact" class="menu__link">Contact</a><br><span class="border_link"></span></li>
+                <li id="phone"><a href="tel:+79529025968" class="menu__link" ><img src="../img/whatsapp-logo.png" width="25px" height="25px"> +79529025968</a><br><span class="border_link"></span></li>-->
+                <li><a href="#SendMessage" id="link_contact" class="menu__link">Контакты</a><br><span class="border_link"></span></li>
             </ul>
         </nav>
 
@@ -36,21 +37,20 @@
         <div class="hello__container _container" id="about">
             <div class="hello__content" >
                 <div class="hello__text _text">
-                <h1  class="hello__title title">Hi, I am Dmitry, <br>
-                    Front-end Developer</h1>
-                    <p>Skills and experience: <strong>React</strong>, JavaScript, TypeScript, Webpack, Gulp, SASS, Bootstrap, JQuery, CSS, HTML<br>
-                        I use design programs: <strong>Sketch, Photoshop, Figma, Zeppelin</strong>.<br>
-                    - Adaptive layout for mobile and desktop resolution.<br>
-                    - Teamwork, interaction with backend developer and designer.</p>
+                <h1  class="hello__title title">Привет, Я Дмитрий, <br>
+                    специалист в сфере веб-разработки</h1>
+                    <p>Владею технологиями: <strong>React</strong>, JavaScript, TypeScript, Webpack, Gulp, SASS, Bootstrap, JQuery, CSS, HTML<br>
+                        CMS: <strong></strong>"1С-Битрикс: Управление сайтом", "Битрикс-24", "WordPress", "Tilda" и др.</strong>.<br>
+                </p>
                 </div>
                 <div class="hello__btn__flex">
-                    <div class="download">Download</div>
-                    <div class="btn" id="hello__btn">Resume EN</div>
-                <div class="btn" id="hello__btn__rus">Resume RUS</div>
+                    <div class="download">Помогу с сайтом:</div>
+                    <div class="btn" id="hello__btn">Разработка</div>
+                <div class="btn" id="hello__btn__rus">Сопровождение</div>
                 </div>
             </div>
             <div class="hello__avatar">
-                <picture><source srcset="img/avatar2.webp" type="image/webp"><img src="img/avatar2.jpg" alt="avatar"></picture>
+                <img src="img/avatar2.jpg" alt="avatar">
             </div>
         </div>
     </section>
@@ -58,7 +58,7 @@
         <div class="chartFrontEnd_container">
             <div class="content_chartFrontEnd">
                 <div class="item_chartFrontEnd">
-                    <picture><source srcset="img/FrontEndDeveloper.webp" type="image/webp"><img src="img/FrontEndDeveloper.jpg" alt="FrontEndDeveloper"></picture>
+                    <img src="img/FrontEndDeveloper.jpg" alt="FrontEndDeveloper">
                 </div>
             </div>
         </div>
@@ -86,31 +86,56 @@
         </div>
     </section>  -->
     <section class="certificates _container" id="certificates">
-        <h3>My Certificates from <a href="https://www.codecademy.com/" target="_blank" class="link__codecademy">Codecademy</a> </h3>
+        <h3>Мои сертификаты из  <a href="https://www.codecademy.com/" target="_blank" class="link__codecademy">Codecademy</a> </h3>
         <div class="certificates-wrapper">
         <div class="codecademy">
-            <p>I take structured knowledge from the codecademy service. Then I use them in practice. This is a great way to develop your knowledge with the help of relevant content and the opportunity to listen to speakers.
+           <!-- <p>I take structured knowledge from the codecademy service. Then I use them in practice. This is a great way to develop your knowledge with the help of relevant content and the opportunity to listen to speakers.
                 <br>Of course, studying at codecademy is not enough. But learning helps me move forward.</p>
             <p>Start of education September 2021 year</p>
+           -->
         </div>
         <div class="certificates_container">
 
             <div class="items-certificates">
                 <div class=""></div>
-                <div class="certificat"><div class="sertificat_title" style="left: 20px"><h3>HTML</h3></div><picture><source srcset="img/certificates/HTML.webp" type="image/webp"><img src="img/certificates/HTML.jpg" class="img_sertificat" alt="HTML"></picture></div>
-                <div class="certificat"><div class="sertificat_title" style="left: 80px"><h3>CSS</h3></div><picture><source srcset="img/certificates/CSS.webp" type="image/webp"><img src="img/certificates/CSS.jpg" class="img_sertificat" alt="CSS"></picture></div>
-                <div class="certificat"><div class="sertificat_title" style="left: 140px"><h3>JS</h3></div><picture><source srcset="img/certificates/JS.webp" type="image/webp"><img src="img/certificates/JS.jpg" class="img_sertificat" alt="JS"></picture></div>
-                <div class="certificat"><div class="sertificat_title" style="left: 200px"><h3>JQuery</h3></div><picture><source srcset="img/certificates/jQuery.webp" type="image/webp"><img src="img/certificates/jQuery.jpg" class="img_sertificat" alt="JQuery"></picture></div>
-                <div class="certificat"><div class="sertificat_title" style="left: 260px"><h3>SASS</h3></div><picture><source srcset="img/certificates/Sass.webp" type="image/webp"><img src="img/certificates/Sass.jpg" class="img_sertificat" alt="Sass"></picture></div>
-                <div class="certificat__last"><picture><source srcset="img/certificates/transparent.webp" type="image/webp"><img src="img/certificates/transparent.png" class="transparent_pic" alt="none"></picture></div>
+                <div class="certificat"><div class="sertificat_title" style="left: 20px"><h3>HTML</h3></div><img src="img/certificates/HTML.jpg" class="img_sertificat" alt="HTML"></div>
+                <div class="certificat"><div class="sertificat_title" style="left: 80px"><h3>CSS</h3></div><img src="img/certificates/CSS.jpg" class="img_sertificat" alt="CSS"></div>
+                <div class="certificat"><div class="sertificat_title" style="left: 140px"><h3>JS</h3></div><img src="img/certificates/JS.jpg" class="img_sertificat" alt="JS"></div>
+                <div class="certificat"><div class="sertificat_title" style="left: 200px"><h3>JQuery</h3></div><img src="img/certificates/jQuery.jpg" class="img_sertificat" alt="JQuery"></div>
+                <div class="certificat"><div class="sertificat_title" style="left: 260px"><h3>SASS</h3></div><img src="img/certificates/Sass.jpg" class="img_sertificat" alt="Sass"></div>
+                <div class="certificat__last"><img src="img/certificates/transparent.png" class="transparent_pic" alt="none"></div>
             </div>
         </div>
         </div>
     </section>
-    <section class="Featured_works _container" id="works">
-        <div class="works_title"><h3>Featured_works</h3></div>
+    <section class="Featured_works _container" id="requisites">
+            <h3>Реквизиты в качестве <a href="https://www.rusprofile.ru/ip/322547600184118" target="_blank" class="link__codecademy">индивидуального предпринимателя</a> </h3>
+        </div>
+        <div class="certificates-wrapper">
+        <div class="codecademy">
+           <p>
+            ИНН:  450128439877 <br>
+            ОГРНИП:  322547600184118 <br>
+            КПП:  нет <br>
+            ИФНС:  5473<br>
+            ПОЛУЧАТЕЛЬ:  Индивидуальный предприниматель Плетнев Дмитрий Николаевич <br>
+            OKPO:  0165564768 <br>
+            OKTMO:  50701000001 <br>
+            Р/С:  40802810201500446707 <br>
+            НАЗВАНИЕ БАНКА:  ООО "Банк Точка" <br>
+            АДРЕС БАНКА:  109456, город Москва, 1-й Вешняковский проезд, д. 1, стр. 8, этаж 1, помещ. 43<br>
+            БИК:  044525104 <br>
+            КОРР. СЧЕТ:  30101810745374525104<br>
+            
+            </p>
+        
+        </div>
+        </div>
+    </section>
+    <!-- <section class="Featured_works _container" id="works">
+       <div class="works_title"><h3>Featured_works</h3></div>
         <div class="works_container">
-            <div class="works_items"><div class="image_items"><a href="http://bulangeria.ru/" target="_blank"><picture><source srcset="\img\Featured_works\bolangeria\bulangeria.webp" type="image/webp"><img src="\img\Featured_works\bolangeria\bulangeria.jpg" alt="Bulangeria"/></picture></a></div>
+            <div class="works_items"><div class="image_items"><a href="http://bulangeria.ru/" target="_blank"><img src="\img\Featured_works\bolangeria\bulangeria.jpg" alt="Bulangeria"/></a></div>
                 <div class="work_content">
                     <h3><a href="http://bulangeria.ru/" target="_blank">Zhito bulangeria, a bakery in Novosibirsk</a></h3>
                     <span class="year">2022</span> <span class="work_technol">HTML, CSS, JS, Figma</span>
@@ -120,7 +145,7 @@
                     </p>
                 </div>
             </div>
-            <div class="works_items"><div class="image_items"><a href="http://tendril-nsk.ru/" target="_blank"><picture><source srcset="img/Featured_works/tendril/Tendril.webp" type="image/webp"><img src="img/Featured_works/tendril/Tendril.jpg" alt="Tendril"/></picture></a></div>
+            <div class="works_items"><div class="image_items"><a href="http://tendril-nsk.ru/" target="_blank"><img src="img/Featured_works/tendril/Tendril.jpg" alt="Tendril"/></a></div>
                 <div class="work_content">
                     <h3><a href="http://tendril-nsk.ru/" target="_blank">Beauty Salon Websites Tendril-nsk.ru</a></h3>
                     <span class="year">2022</span> <span class="work_technol">HTML, CSS, JS, Gulp, Webpack, Figma</span>
@@ -130,7 +155,7 @@
                     </p>
                 </div>
             </div>
-            <div class="works_items"><div class="image_items"><a href="http://pletnevd.com/watch/" target="_blank"><picture><source srcset="img/Featured_works/watch/watch.webp" type="image/webp"><img src="img/Featured_works/watch/watch.jpg" alt="watch"/></picture></a></div>
+            <div class="works_items"><div class="image_items"><a href="http://pletnevd.com/watch/" target="_blank"><img src="img/Featured_works/watch/watch.jpg" alt="watch"/></a></div>
                 <div class="work_content">
                     <h3><a href="http://pletnevd.com/watch/" target="_blank">Product page of the online watch store</a></h3>
                     <span class="year">2022</span> <span class="work_technol">HTML, CSS, Flex, jQuery, JS, Figma</span>
@@ -140,7 +165,7 @@
                     </p>
                 </div>
             </div>
-            <div class="works_items"><div class="image_items"><a href="http://pletnevd.com/Gorki/" target="_blank"><picture><source srcset="img/Featured_works/gorki/gorki.webp" type="image/webp"><img src="img/Featured_works/gorki/gorki.jpg" alt="gorki"/></picture></a></div>
+            <div class="works_items"><div class="image_items"><a href="http://pletnevd.com/Gorki/" target="_blank"><img src="img/Featured_works/gorki/gorki.jpg" alt="gorki"/></a></div>
                 <div class="work_content">
                     <h3><a href="http://pletnevd.com/Gorki/" target="_blank">Interactive map in JS for a Cottage settlement</a></h3>
                     <span class="year">2021</span> <span class="work_technol">HTML, CSS, jQuery, React, JS</span>
@@ -150,7 +175,7 @@
                     </p>
                 </div>
             </div>
-            <div class="works_items"><div class="image_items"><a href="http://xn----8sbaaankiwtdeytygl.xn--p1ai/Kristina/" target="_blank"><picture><source srcset="img/Featured_works/agents/agents.webp" type="image/webp"><img src="img/Featured_works/agents/agents.jpg" alt="agents"/></picture></a></div>
+            <div class="works_items"><div class="image_items"><a href="http://xn----8sbaaankiwtdeytygl.xn--p1ai/Kristina/" target="_blank"><img src="img/Featured_works/agents/agents.jpg" alt="agents"/></a></div>
                 <div class="work_content">
                     <h3><a href="http://xn----8sbaaankiwtdeytygl.xn--p1ai/Kristina/" target="_blank">Agent Selection Page </a></h3>
                     <span class="year">2021</span> <span class="work_technol">HTML, CSS, jQuery, Figma</span>
@@ -160,7 +185,7 @@
                     </p>
                 </div>
             </div>
-            <div class="works_items"><div class="image_items"><a href="http://xn----8sbaaankiwtdeytygl.xn--p1ai" target="_blank"><picture><source srcset="img/Featured_works/gorki-blog/gorki-blog.webp" type="image/webp"><img src="img/Featured_works/gorki-blog/gorki-blog.jpg" alt="agents"/></picture></a></div>
+            <div class="works_items"><div class="image_items"><a href="http://xn----8sbaaankiwtdeytygl.xn--p1ai" target="_blank"><img src="img/Featured_works/gorki-blog/gorki-blog.jpg" alt="agents"/></a></div>
                 <div class="work_content">
                     <h3><a href="http://xn----8sbaaankiwtdeytygl.xn--p1ai" target="_blank">Blog for a Cottage settlement</a></h3>
                     <span class="year">2020</span> <span class="work_technol">HTML, CSS, Wordpress</span>
@@ -171,7 +196,9 @@
                 </div>
             </div>
         </div>
+    
     </section>
+-->
  </main>
 
 

@@ -128,9 +128,9 @@ export function Btn(SelectorBtn){
         b.innerHTML = "";
         setTimeout(function () {
             b.className = "btn";
-            b.innerHTML = "<b>thanks</b>";
+            b.innerHTML = "<b>Спасибо</b>";
             //window.location.href = 'https://novosibirsk.hh.ru/resume/a5b4f25fff093f30880039ed1f587741624d46';
-            window.open('https://novosibirsk.hh.ru/resume/a5b4f25fff093f30880039ed1f587741624d46');
+            window.open('http://pletnevhost.ru/');
         }, 3000);
     }
 }
