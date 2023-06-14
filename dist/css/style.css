@@ -500,6 +500,7 @@ textarea {
 
 .certificates {
   padding-top: 20px;
+  padding-bottom: 250px;
 }
 @media (max-width: 800px) {
   .certificates {
@@ -725,7 +726,8 @@ body {
 
 ._container {
   max-width: 1000px;
-  margin: 200px auto;
+  margin: 20px auto;
+  width: 1000px;
 }
 @media (max-width: 991.98px) {
   ._container {
@@ -934,6 +936,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   order: 1;
+  margin: 200px auto;
   position: relative;
   align-content: center;
   align-items: flex-start;

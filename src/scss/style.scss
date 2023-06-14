@@ -107,7 +107,8 @@ body{
 
 ._container {
   max-width: $maxWidthContainer;
-  margin: 200px auto;
+  margin: 20px auto;
+  width: 1000px;
   @media (max-width: $md2) {
     max-width: 750px;
     margin: 130px auto;
@@ -328,6 +329,7 @@ body{
   display: flex;
   flex-flow: row wrap;
   order: 1;
+  margin: 200px auto;
   position: relative;
   align-content: center;
   align-items: flex-start;
